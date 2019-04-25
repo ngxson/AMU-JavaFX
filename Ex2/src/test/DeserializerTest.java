@@ -1,7 +1,8 @@
-package neos.deserializeJson;
+package test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
+import ngxson.utils.*;
 import org.junit.jupiter.api.Test;
 
 import java.io.*;

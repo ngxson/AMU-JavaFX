@@ -1,4 +1,4 @@
-package neos.deserializeJson;
+package ngxson.utils;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,7 +9,8 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown=true)
 public class NearEarthObject {
 
-  // TODO: complete this class
+  @JsonProperty("orbital_data")
+  private OrbitalData orbital_data;
     
   public NEOLink getLinks() {
     return links;
@@ -45,7 +46,7 @@ public class NearEarthObject {
   }
 
   public OrbitalData getOrbitalData() {
-    return null;
+    return orbital_data;
   }
 
   public boolean isSentryObject() {
@@ -73,5 +74,11 @@ public class NearEarthObject {
   @JsonProperty("close_approach_data")
   private Approach[] closeApproachData;
 
+  @JsonProperty("estimated_diameter")
+  private Diameter estimated_diameter;
 
+
+  public Diameter getEstimatedDiameter() {
+    return estimated_diameter;
+  }
 }

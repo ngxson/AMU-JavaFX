@@ -1,4 +1,4 @@
-package neos.deserializeJson;
+package ngxson.utils;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

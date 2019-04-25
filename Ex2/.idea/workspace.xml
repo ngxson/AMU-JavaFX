@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Run at AMU">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ngxson/nasa/DataFetcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ngxson/nasa/Main.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="TP 10: Add Jackson">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/amu_javafx2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/amu_javafx2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/Approach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/Approach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/Diameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/Diameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/Distance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/Distance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/Interval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/Interval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/Links.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/Links.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/LocalDateDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/LocalDateDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/LocalDateTimeDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/LocalDateTimeDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/NEOLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/NEOLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/NearEarthObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/NearEarthObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/OrbitClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/OrbitClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/OrbitalData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/OrbitalData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ngxson/utils/Velocity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ngxson/utils/Velocity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/DeserializerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DeserializerTest.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,25 +86,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="6" />
-          <entry key="java" value="533" />
-          <entry key="txt" value="30" />
+          <entry key="java" value="895" />
+          <entry key="txt" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="533" />
-          <entry key="PLAIN_TEXT" value="30" />
+          <entry key="JAVA" value="895" />
+          <entry key="PLAIN_TEXT" value="70" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="19" />
         </counts>
       </usages-collector>
     </session>
@@ -102,18 +114,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ngxson/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ngxson/nasa/DataFetcher.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -128,7 +128,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ngxson/nasa/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
@@ -138,20 +138,104 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ngxson/charts.fxml">
+        <entry file="file://$PROJECT_DIR$/src/test/DeserializerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+            <state relative-caret-position="168">
+              <caret line="160" column="34" lean-forward="true" selection-start-line="160" selection-start-column="34" selection-end-line="160" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ngxson/utils/NearEarthObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+              <folding>
+                <element signature="e#898#899#0" expanded="true" />
+                <element signature="e#919#920#0" expanded="true" />
+                <element signature="e#1567#1568#0" expanded="true" />
+                <element signature="e#1602#1603#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ngxson/RealFunction.java">
+        <entry file="file://$PROJECT_DIR$/src/ngxson/utils/Document.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="228">
+              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+              <folding>
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngxson/utils/Approach.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+              <folding>
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#426#427#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#556#557#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngxson/utils/Links.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngxson/utils/NEOLink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngxson/utils/OrbitalData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-646">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngxson/utils/Velocity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <folding>
+                <element signature="e#237#238#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,6 +249,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>neos.deserializeJson</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ngxson.utils</replace>
+    </replaceStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -186,6 +278,13 @@
         <option value="$PROJECT_DIR$/src/ngxson/nasa/Const.java" />
         <option value="$PROJECT_DIR$/src/ngxson/nasa/DataFetcher.java" />
         <option value="$PROJECT_DIR$/src/ngxson/nasa/Main.java" />
+        <option value="$PROJECT_DIR$/src/ngxson/utils/LocalDateDeserializer.java" />
+        <option value="$PROJECT_DIR$/src/test/DeserializerTest.java" />
+        <option value="$PROJECT_DIR$/src/ngxson/utils/Links.java" />
+        <option value="$PROJECT_DIR$/src/ngxson/utils/Velocity.java" />
+        <option value="$PROJECT_DIR$/src/ngxson/utils/Document.java" />
+        <option value="$PROJECT_DIR$/src/ngxson/utils/Approach.java" />
+        <option value="$PROJECT_DIR$/src/ngxson/utils/NearEarthObject.java" />
       </list>
     </option>
   </component>
@@ -231,6 +330,19 @@
               <item name="ngxson" type="462c0819:PsiDirectoryNode" />
               <item name="nasa" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Ex2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ngxson" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ex2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ex2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -252,7 +364,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556202534712" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556203896897" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -278,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DeserializerTest">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -318,6 +430,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DeserializerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="amu_javafx2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DeserializerTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -347,6 +477,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.DeserializerTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DeserializerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -367,16 +506,54 @@
       <option name="project" value="LOCAL" />
       <updated>1556200947760</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TP 10: Add DataFetcher">
+      <created>1556202574435</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556202574435</updated>
+    </task>
+    <task id="LOCAL-00003" summary="TP 10: Add Jackson">
+      <created>1556202622950</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556202622950</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DeserializerTest - 2019.04.25 at 16h 42m 08s.xml">
+      <configuration name="DeserializerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeserializerTest - 2019.04.25 at 16h 43m 29s.xml">
+      <configuration name="DeserializerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeserializerTest - 2019.04.25 at 16h 48m 08s.xml">
+      <configuration name="DeserializerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeserializerTest - 2019.04.25 at 16h 50m 38s.xml">
+      <configuration name="DeserializerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="24" width="1682" height="1003" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21909425" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21909425" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -385,22 +562,22 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32837528" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32837528" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32951945" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.32951945" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32951945" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.249694" />
       <window_info anchor="right" id="JetGradle" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
@@ -418,7 +595,9 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Run at AMU" />
-    <option name="LAST_COMMIT_MESSAGE" value="Run at AMU" />
+    <MESSAGE value="TP 10: Add DataFetcher" />
+    <MESSAGE value="TP 10: Add Jackson" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP 10: Add Jackson" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -505,6 +684,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngxson/utils/LocalDateDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngxson/utils/Diameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngxson/utils/Velocity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngxson/utils/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding>
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngxson/utils/Links.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngxson/utils/NEOLink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngxson/utils/OrbitalData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngxson/utils/Approach.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/DeserializerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="160" column="34" lean-forward="true" selection-start-line="160" selection-start-column="34" selection-end-line="160" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngxson/utils/NearEarthObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding>
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#1602#1603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -570,6 +856,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>com.fasterxml.jackson.core:jackson-databind:2.9.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

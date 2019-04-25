@@ -1,4 +1,4 @@
-package neos.deserializeJson;
+package ngxson.utils;
 
 public class NEOLink {
 
