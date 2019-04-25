@@ -7,7 +7,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import ngxson.utils.NearEarthObject;
 
+import java.io.*;
+import java.net.URISyntaxException;
+
 public class Main extends Application {
+
+    public static final boolean OFFLINE = false;
+    public static DataFetcher dataFetcher = new DataFetcher();
+
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("neo.fxml"));
@@ -17,15 +24,18 @@ public class Main extends Application {
     }
 
 
-    public static void main(String[] args) {
-        /*var count = 0;
-        for (var i = 0 ; i < 1000/20 ; i++) {
-            for (NearEarthObject neo : dataFetcher.fetch(i).getNearEarthObjects()) {
-                count++;
-                System.out.println(count + ": " + neo.getName());
-            }
-        }*/
+    public static void main(String[] args) throws IOException, URISyntaxException {
         launch(args);
+        //fetchAndSaveData();
+    }
+
+    public static void fetchAndSaveData() throws IOException, URISyntaxException {
+        for (var i = 0 ; i < 1000/20 ; i++) {
+            var file = new File("./data/" + i + ".json");
+            if (!file.exists()) file.createNewFile();
+            FileOutputStream fop = new FileOutputStream(file);
+            dataFetcher.fetchToOutputStream(fop, i);
+        }
     }
 }
 

@@ -7,6 +7,7 @@ import ngxson.utils.LocalDateDeserializer;
 import ngxson.utils.LocalDateTimeDeserializer;
 
 import javax.print.Doc;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -56,10 +57,15 @@ public class DataFetcher {
     }
 
     public Document fetch(int page) throws URISyntaxException, IOException {
-        String request = prepareQuery(page);
-        URI uri = prepareURI(request);
-        URL url = uri.toURL();
+        if (Main.OFFLINE) {
+            var file = new File("./data/" + page + ".json");
+            return mapper.readValue(file, Document.class);
+        } else {
+            String request = prepareQuery(page);
+            URI uri = prepareURI(request);
+            URL url = uri.toURL();
 
-        return mapper.readValue(url, Document.class);
+            return mapper.readValue(url, Document.class);
+        }
     }
 }
