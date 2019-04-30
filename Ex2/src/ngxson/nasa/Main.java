@@ -12,7 +12,7 @@ import java.net.URISyntaxException;
 
 public class Main extends Application {
 
-    public static final boolean OFFLINE = false;
+    public static final boolean OFFLINE = true;
     public static DataFetcher dataFetcher = new DataFetcher();
 
     @Override
